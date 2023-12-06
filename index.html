@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KPOWPENG</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bubble.css">
+    <script src="./js/bubble.js"></script>
+</head>
+
+<body>
+    <!-- Cursor -->
+    <div class="circle"></div>
+    <script>
+        document.addEventListener("mousemove", function (event) {
+            var circle = document.querySelector(".circle");
+            circle.style.display = "block";
+            circle.style.left = event.clientX - (circle.offsetWidth / 2) + "px";
+            circle.style.top = event.clientY - (circle.offsetHeight / 2) + "px";
+        });
+    </script>
+
+    <!-- Navigation Tab  -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <!-- <li><a href="design.html">Design</a></li>  -->
+        </ul>
+    </nav>
+
+    <!-- Rolling text  -->
+    <div class="rolling-text-container">
+        <div class="rolling-text">
+            <span>Slow rap slow jam
+                Slow rain
+                Everything slow
+                When it rains, it pours
+                When it rains, it pours
+                It pours
+                Forever rain (forever rain)
+                Forever rain (forever rain)
+                Forever rain (forever rain)
+                Forever rain (forever rain)
+                Forever rain (forever rain)
+                Forever rain
+                Forever rain
+                forever rain
+                (You're my hero) forever rain
+                (You're my hero) forever rain
+                (You're my hero) forever rain
+                
+                &nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <!-- title and body text -->
+    <div class="wrapper">
+        <h1>
+            HOME
+        </h1>
+
+
+        <!-- <h2>Welcome to my portfolio.</h2>
+        <p class="p-welcome">Welcome to my website. Feel free to look around.</p>
+        <p>Welcome to my website</p>
+        <p>Welcome to my website</p>
+        <p>Welcome to my website</p> -->
+
+
+        <div>
+            <p> hi there</p>
+        </div>
+
+    </div>
+
+    <!-- <div id="bubble-wrapper">
+
+    </div> -->
+
+    <nav class="footer">
+        <ul>
+            <li><a id="bottomleft" href="mailto:kpowpeng@umich.edu">EMAIL</a></li>
+            <li><a href="index.html">HAIXIANG KEVIN PENG</a></li>
+            <li><a id="bottomright" href="index.html">NUMBER</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="image-container">
+        <img class="draggable-image" src="IMG_6471 2.JPG" alt="Project ghost garden: a girl sitting under sun">
+        <img class="draggable-image" src="IMG_6817.JPG" alt="Project Chinese women: a girl under red curtain">
+        <img class="draggable-image" src="Screen Shot 2023-04-27 at 17.14.0032.png" alt="Project Night: a girl on a swing">
+        <img class="draggable-image" src="IMG_8709.JPG" alt="A girl with a cone">
+        <img class="draggable-image" src="IMG_8719.JPG" alt="A girl under sunshine">
+        <img class="draggable-image" src="IMG_1459.JPG" alt="A girl with picnic">
+    </div>
+
+
+
+    <script src="./js/draggable-image.js"></script>
+    <!-- <a id="here" href="pages/contact.html" target="_blank">Contact -->
+    <!-- <a href="index.html">Home</a> -->
+</body>
+
+</html>

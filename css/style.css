@@ -1,0 +1,338 @@
+html,
+body {
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+.text-container{
+    margin-bottom: 100px;
+} */
+
+
+@font-face {
+    font-family: 'Monte Carlo';
+    src: url('montecarlo-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Monte Carlo', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    margin: 71px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    color: white;
+    background-color: transparent;
+    font-size: 80px;
+    font-weight: lighter;
+    z-index: 0;
+    mix-blend-mode: difference;
+}
+
+h2 {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    font-weight: lighter;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 0;
+    color: white;
+    font-size: 20px;
+    mix-blend-mode: difference;
+    margin-top: 40px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    text-align: right;
+    border-bottom: 1.5px solid black;
+    z-index: 1;
+}
+
+
+.rolling-text-container {
+    /* border-bottom: 1.5px solid black; */
+    position: fixed;
+    margin-top: 60px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.rolling-text {
+    white-space: nowrap;
+    animation: roll 30s linear infinite;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+}
+
+.rolling-text span {
+    padding-right: -50px;
+    /* 设置相邻span之间的间隔 */
+}
+
+.rolling-text:hover {
+    font-family: 'Monte Carlo', sans-serif;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+ul li {
+    display: block;
+    list-style: none;
+    display: inline-block;
+    line-height: 50px;
+}
+
+ul li a {
+    text-decoration: none;
+    /* font-family: monospace; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: black;
+    padding: 0 20px;
+}
+
+ul li a:hover {
+    font-family: 'Monte Carlo', sans-serif;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bolder;
+
+}
+
+.wrapper {
+    margin: 0 auto 0 auto;
+    /* top right botton left */
+
+    width: 1000px;
+    background-color: transparent;
+}
+
+#image-container {
+    position: relative;
+    width: 800px;
+    height: 491px;
+    z-index: -1;
+}
+
+.draggable-image {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    transform: scale(0.5);
+    max-width: calc(100% - 20px);
+    /* 减去一些空白间距 */
+    max-height: calc(100% - 20px);
+    /* 减去一些空白间距 */
+    z-index: -999;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    text-align: center;
+    border-top: 1.5px solid black;
+}
+
+
+.circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    display: none;
+    z-index: -1;
+}
+
+.show-image {
+    font-size: 30px;
+    background: red;
+    display: inline-block;
+}
+
+/* 
+.cursor{
+    display: block; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 75px; 
+    height: 75px; 
+    background-color: var(--white); 
+    mix-blend-mode: exclusion; 
+    border-radius: var(--radius-circle); 
+    transform: translate(-50%,50%) scale (0.35); 
+    transition: transform 0.35s; 
+    pointer-events: none; 
+    z-index: 6; 
+}
+
+.cursor.hovered{
+    transform: translate(-50%, -50%) scale (1.2); 
+}
+
+.cursor.disabled {
+    transform: translate(-50%, -50%) scale(0); 
+}
+ */
+
+
+  body.photography-page {
+    /* background-image: url("Selfcare.png"); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  body.photography-page nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    border-bottom: 1.5px solid white;
+    z-index: 1;
+  }
+
+  body.photography-page ul li a {
+    text-decoration: none;
+    /* font-family: monospace; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+}
+
+
+body.photography-page .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border-top: 1.5px solid white;
+}
+
+
+
+body.photography-page nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    border-bottom: 1.5px solid white;
+    z-index: 1;
+  }
+
+  body.photography-page ul li a {
+    text-decoration: none;
+    /* font-family: monospace; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+}
+
+
+body.photography-page .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border-top: 1.5px solid white;
+}
+
+
+#bottomleft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+#bottomright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+body.design-page {
+    background-image: url("8.png");
+    background-size:cover;
+  }
+
+  body.design-page nav {
+    background-color: black;
+  }
+
+ body.design-page ul li a {
+    text-decoration: none;
+    /* font-family: monospace; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    padding: 0 20px;
+}
+
+body.design-page nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    border-bottom: 1.5px solid white;
+    z-index: 1;
+  }
+
+  body.design-page .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    border-top: 1.5px solid white;
+}

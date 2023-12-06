@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jennieyyy</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="circle"></div>
+    <script>
+        document.addEventListener("mousemove", function (event) {
+            var circle = document.querySelector(".circle");
+            circle.style.display = "block";
+            circle.style.left = event.clientX - (circle.offsetWidth / 2) + "px";
+            circle.style.top = event.clientY - (circle.offsetHeight / 2) + "px";
+        });
+    </script>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="film.html">Film</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <!-- <li><a href="design.html">Design</a></li>  -->
+        </ul>
+    </nav>
+
+    <div class="rolling-text-container">
+        <div class="rolling-text">
+            <span>I said I bought some old things. She burst into laughter the moment she heard me saying that. I call your Dad old thing sometimes. She said.
+                Then I started to talk about the film stock I bought, and when I got to the old town theater, she said, how could I not know, we used to go there for movies when we were kids.
+                My cousin used to play films. He was on the team. He used to say, “Hurry up! The movie is on!” Then a bunch of us, to be exact, the whole village, would walk a dozen miles over to the theater, just to watch a movie.
+                Once there was an Arabic film, with beautiful music and a beautiful cast. When the film went to the end, when the man died or ran out, I also ran behind the curtain. How stupid I was!
+                I said, no no no. That’s not stupid at all.
+                
+                &nbsp;&nbsp;&nbsp;</span>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <div class="wrapper">
+            <h1 style="position: fixed; margin-left: 450px; margin-top: 200px;">
+                CHAPTER 1 <br>
+                ABOUT ME.
+            </h1>
+            <img class="display-img" src="my_image.jpg" alt="Image 1" style="width: 50%; position: relative; z-index: -2; margin-top: 100px;"; >
+            
+            <p>
+                Haixiang Kevin Peng is a photographer, cinematographer, and wrestler based in Ann Arbor. Born and raised in
+                Shanghai, China in 2002, Kevin is now a junior student in Umich, double majoring in Business Economics
+                and School of Information and will graduate in June 2025.
+                <br>
+                <br>
+                Driven by a deep passion for photography and creating cinematic content, Kevin is committed to
+                integrating his experience in marketing, finance, and the business landscape with his love for art, particularly
+                photography and cinematography.
+                <br><br>
+                His goal is to work on cutting-edge entertainment projects that leverage new technologies in the realms
+                of
+                entertainment management or film production. Thus, he is eager to explore various opportunities to
+                connect with
+                like-minded professionals who’s also dedicated to the film and entertainment industry.
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </p>
+
+        </div>
+    </div>
+
+
+    <nav class="footer">
+        <ul>
+            <li><a id="bottomleft" href="mailto:kpowpeng@umich.edu">EMAIL</a></li>
+            <li><a href="index.html">HAIXIANG KEVIN PENG</a></li>
+            <li><a id="bottomright" href="index.html">NUMBER</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
